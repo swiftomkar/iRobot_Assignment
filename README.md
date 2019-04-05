@@ -1,12 +1,17 @@
 # iRobot_Assignment
 This repo consists of the assignment which is a part of the interview process for the cloud software team
 
-##Manual: end user:
-1. 
+## Manual: end user:
+1. Goto the project forlder
+2. to to dist
+3. open the command line window
+4. Run main.exe (windows: ./main.exe)
+5. Once asked, provide the names of the available ingredients seperated by spaces.
+6. The result will be displayed in the window
 
-##Manual: internal:
+## Manual: internal:
 
-###APIrequests.py:
+### APIrequests.py:
 1. This class is responsible to make all API requests to the food2fork API. 
 2. The instantiation of an object of APIrequests type automatically loads data from the specified json file in the keys directory.
 3. Once the file is loaded, it is available for all methods.

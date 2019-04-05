@@ -1,8 +1,8 @@
+#!/usr/bin/env python
 import APIrequests
 import time
 
 def diff(availabelIngredients,requiredIngredients):
-    #print(requiredIngredients)
     for i in range(len(requiredIngredients)):
         for j in range(len(availabelIngredients)):
             if availabelIngredients[j] in requiredIngredients[i]:
@@ -27,7 +27,9 @@ if __name__=='__main__':
             if i!='':
                 print(i)
     totalTime=time.time()-start
-    print("Total execution time including API calls:", totalTime)
-    print("Total execution time excluding API calls:", totalTime-totalAPIreqTime)
+    print("Total execution time including API calls:", totalTime,'s')
+    print("Total execution time excluding API calls:", totalTime-totalAPIreqTime,'s')
+    while True:
+        time.sleep(1)
 
 

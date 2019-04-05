@@ -1,6 +1,5 @@
 import unittest
 from APIrequests import APIrequests
-from unittest.mock import patch
 
 class testAPI(unittest.TestCase):
     def test_foodSearch(self):
