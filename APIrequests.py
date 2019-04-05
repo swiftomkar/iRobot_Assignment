@@ -5,7 +5,7 @@ import json
 #Here, self.config_obj contains the dictionary with URL's and the API key.
 class APIrequests:
     def __init__(self):
-        self.config = open('keys/f2fomkarbdesai.json', 'r')
+        self.config = open('keys/foodtofork.json', 'r')
         self.config_obj = json.load(self.config)
     #takes available ingredients as an input string and returns the recipe ID of the top rated recipe
     #which contains the ingredients
