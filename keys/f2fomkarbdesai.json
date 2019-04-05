@@ -1,0 +1,5 @@
+{
+  "searchUri":"https://www.food2fork.com/api/search",
+  "apiKey":"7f04438ab8581f08feb0f2d04ce96d6e",
+  "recepieUri":"https://www.food2fork.com/api/get"
+}
