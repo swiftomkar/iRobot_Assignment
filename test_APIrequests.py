@@ -4,10 +4,10 @@ from APIrequests import APIrequests
 class testAPI(unittest.TestCase):
     def test_foodSearch(self):
         testSession=APIrequests()
-        response=testSession.foodSearch('potato%20rice')
+        response=testSession.foodSearch('potato%20rice','rating')
         self.assertEqual(response,'086443')
 
-        response=testSession.foodSearch('chicken%20cheese')
+        response=testSession.foodSearch('chicken%20cheese','rating')
         self.assertEqual(response,'e7fdb2')
 
     def test_getRecipeDetails(self):

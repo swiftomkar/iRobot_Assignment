@@ -5,14 +5,16 @@ import json
 #Here, self.config_obj contains the dictionary with URL's and the API key.
 class APIrequests:
     def __init__(self):
-        self.config = open('keys/foodtofork.', 'r')
+        self.config = open('keys/foodtofork.json', 'r')
         self.config_obj = json.load(self.config)
+        self.config.close()
     #takes available ingredients as an input string and returns the recipe ID of the top rated recipe
     #which contains the ingredients
-    def foodSearch(self,ingredients):
-        uriString=self.config_obj['searchUri']+'?'+'key='+self.config_obj['apiKey']+'&'+'q='+ingredients+'&'+'sort=r'
+    def foodSearch(self,ingredients,sortBy):
+        uriString=self.config_obj['searchUri']+'?'+'key='+self.config_obj['apiKey']+'&'+'q='+ingredients+'&'+'sort='+sortBy[0]
         recipes=requests.get(uriString)
-        if not(200<=recipes.status_code<300):
+        if not recipes.status_code==200:
+            print('There was some error')
             print("Response code was not 2xx, was {}".format(recipes.status_code))
         else:
             if len(recipes.json()['recipes'])>0:
@@ -26,7 +28,8 @@ class APIrequests:
         if recipe_id:
             uriString = self.config_obj['recepieUri']+'?'+'key='+self.config_obj['apiKey']+'&'+'rId='+str(recipe_id)
             response = requests.get(uriString)
-            if not (200 <= response.status_code < 300):
+            if not response.status_code==200:
+                print('There was some error')
                 print("Response code was not 2xx, was {}".format(response.status_code))
             else:
                 return {'ingredients': response.json()['recipe']['ingredients'],

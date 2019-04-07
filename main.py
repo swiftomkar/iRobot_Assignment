@@ -17,7 +17,7 @@ if __name__=='__main__':
     availIngredients=availIngredients.replace(',','%20')
     session=APIrequests.APIrequests()
     apiReqStart=time.time()
-    topRatedRecipeId=session.foodSearch(availIngredients)
+    topRatedRecipeId=session.foodSearch(availIngredients,'rating')
     recipeDetails=session.getRecipeDetails(topRatedRecipeId)
     totalAPIreqTime=time.time()-apiReqStart
     if recipeDetails:

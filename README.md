@@ -30,7 +30,7 @@ recipeDetails=session.getRecipeDetails('xyZ123')
 ```
    This will return the details for recipe with the given recipe ID
 
-###main.py:
+### main.py:
 1. Main execution code responsible to take user input, make requests to the food2fork API and then generate the list of the missing recipes
 2. main.py imports APIrequests
 3. This code is also responsible for providing the user with information in an organised and informative mannar.
@@ -39,4 +39,5 @@ recipeDetails=session.getRecipeDetails('xyZ123')
 diff=main.diff(['potato','cheese'],['potato','onion','bacon','cheese','celery'])
 ```
 5. This function returns a list with the available ingredients replaced with an empty string ""
+
 
