@@ -36,13 +36,13 @@
   ('main',
    'C:\\Users\\Omkar Desai\\PycharmProjects\\iRobot_Assignment\\main.py',
    'PYSOURCE'),
-  ('VCRUNTIME140.dll',
-   'c:\\users\\omkar '
-   'desai\\appdata\\local\\programs\\python\\python36-32\\VCRUNTIME140.dll',
-   'BINARY'),
   ('python36.dll',
    'c:\\users\\omkar '
    'desai\\appdata\\local\\programs\\python\\python36-32\\python36.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'c:\\users\\omkar '
+   'desai\\appdata\\local\\programs\\python\\python36-32\\VCRUNTIME140.dll',
    'BINARY'),
   ('_ssl',
    'c:\\users\\omkar '
@@ -92,7 +92,7 @@
  [],
  False,
  False,
- 1554471109,
+ 1554631354,
  [('run.exe',
    'c:\\users\\omkar '
    'desai\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-32bit\\run.exe',

@@ -5,9 +5,12 @@ This repo consists of the assignment which is a part of the interview process fo
 1. Goto the project forlder
 2. to to dist
 3. open the command line window
-4. Run ./main.exe (windows: .\main.exe) 
+4. Run main.exe (windows: .\main.exe) 
 5. Once asked, provide the names of the available ingredients seperated by spaces.
 6. The result will be displayed in the window
+
+1. To build executable for mac/linux, go to the directory with the main.py script, open the cmd, type: chmod +x main.py
+2. Now, on the cmd, run the script by typing ./main.py
 
 ## Manual: internal:
 
