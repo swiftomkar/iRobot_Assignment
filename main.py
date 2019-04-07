@@ -15,7 +15,6 @@ if __name__=='__main__':
     totalAPIreqTime=time.time()-apiReqStart
     if recipeDetails:
         toCompare=compareIngredients(availIngredients,recipeDetails)
-
         missingIngredients=toCompare.diff()
         print("Here are the ingredients you will need to make",recipeDetails['name'],':')
         for i in missingIngredients:

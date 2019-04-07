@@ -35,7 +35,8 @@ recipeDetails=session.getRecipeDetails('xyZ123')
 2. In it's current state, It supports a diff function which creates a diff of the required ingredients minus the available ingredients.
 3. Example:
 ```python
-
+toCompare=compareIngredients(availIngredients,recipeDetails)
+missingIngredients=toCompare.diff()
 ```
 
 ### main.py:
