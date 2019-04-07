@@ -30,6 +30,14 @@ recipeDetails=session.getRecipeDetails('xyZ123')
 ```
    This will return the details for recipe with the given recipe ID
 
+### compareIngredients.py
+1. This class is responsible to compare between user input and the suggested recipe.
+2. In it's current state, It supports a diff function which creates a diff of the required ingredients minus the available ingredients.
+3. Example:
+```python
+
+```
+
 ### main.py:
 1. Main execution code responsible to take user input, make requests to the food2fork API and then generate the list of the missing recipes
 2. main.py imports APIrequests

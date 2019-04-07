@@ -42,5 +42,6 @@ class APIrequests:
                 self.logger.error("Response code was not 2xx, was {}".format(response.status_code))
             else:
                 return {'ingredients': response.json()['recipe']['ingredients'],
-                        'name':response.json()['recipe']['title']
+                        'name':response.json()['recipe']['title'],
+                        'responseBody':response.json()
                         }
