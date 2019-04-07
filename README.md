@@ -39,5 +39,6 @@ recipeDetails=session.getRecipeDetails('xyZ123')
 diff=main.diff(['potato','cheese'],['potato','onion','bacon','cheese','celery'])
 ```
 5. This function returns a list with the available ingredients replaced with an empty string ""
+6. In an ideal case, the API key should not be added to the repository and should be set as an env variable/input by the user. However, for convenience of execution, the API keys have been added to the repo here.
 
 
