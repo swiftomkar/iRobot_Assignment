@@ -3,6 +3,7 @@ import APIrequests
 import time
 from compareIngredients import compareIngredients
 
+
 if __name__=='__main__':
     print("Please provide all the ingredients available with you seperated by comas:")
     availIngredients=input()
