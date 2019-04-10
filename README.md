@@ -44,13 +44,8 @@ missingIngredients=toCompare.diff()
 
 ### main.py:
 1. Main execution code responsible to take user input, make requests to the food2fork API and then generate the list of the missing recipes
-2. main.py imports APIrequests
+2. main.py imports APIrequests and compareIngredients
 3. This code is also responsible for providing the user with information in an organised and informative mannar.
-4. The diff function:
-```python
-diff=main.diff(['potato','cheese'],['potato','onion','bacon','cheese','celery'])
-```
-5. This function returns a list with the available ingredients replaced with an empty string ""
-6. In an ideal case, the API key should not be added to the repository and should be set as an env variable/input by the user. However, for convenience of execution, the API keys have been added to the repo here.
+4. In an ideal case, the API key should not be added to the repository and should be set as an env variable/input by the user. However, for convenience of execution, the API keys have been added to the repo here.
 
 
