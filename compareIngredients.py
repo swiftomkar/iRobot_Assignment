@@ -13,7 +13,6 @@ class compareIngredients:
         self.recepieDetails=detailedRecipe
 
     def diff(self):
-        self.logger.debug('diff entered')
         requiredIngredients=self.recepieDetails['ingredients']
         for i in range(len(requiredIngredients)):
             for j in range(len(self.availableIngredients)):

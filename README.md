@@ -23,13 +23,15 @@ This repo consists of the assignment which is a part of the interview process fo
 6. example: foodSearch
 ```python
 session=APIrequests() 
-topRatedRecipeId=session.foodSearch('potato%20cabbage%20rice')
+if session.checkConnectivity():
+    topRatedRecipeId=session.foodSearch('potato%20cabbage%20rice')
 ```
    This will return the recipe ID for the top rated recipe with the given ingredients as input parameters
 7. Example: getRecipeDetails
 ```python
 session=APIrequests() 
-recipeDetails=session.getRecipeDetails('xyZ123')
+if session.checkConnectivity():
+    recipeDetails=session.getRecipeDetails('xyZ123')
 ```
    This will return the details for recipe with the given recipe ID
 

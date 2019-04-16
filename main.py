@@ -8,7 +8,6 @@ if __name__=='__main__':
     print("Please provide all the ingredients available with you seperated by comas:")
     availIngredients=input()
     start=time.time()
-    #availIngredientsList=availIngredients.split(',')
     session=APIrequests.APIrequests()
     if session.checkConnectivity():
         apiReqStart=time.time()

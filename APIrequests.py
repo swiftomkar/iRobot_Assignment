@@ -9,7 +9,7 @@ class APIrequests:
     def __init__(self):
         logging.basicConfig(filename="APIrequests.log",
                             format='%(asctime)s %(message)s',
-                            filemode='w')
+                            filemode='a')
         self.logger=logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         self.config = open('keys/foodtofork.json', 'r')
@@ -20,9 +20,11 @@ class APIrequests:
     def checkConnectivity(self):
         try:
             socket.create_connection(("www.google.com", 80))
+            self.logger.error("Network check-Passed")
             return True
         except OSError:
             pass
+        self.logger.error("Network check- Failed")
         return False
     def foodSearch(self,ingredients,sortBy='rating'):
         ingredients=ingredients.replace(',','%20')
