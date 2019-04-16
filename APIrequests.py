@@ -1,6 +1,7 @@
 import requests
 import json
 import logging
+import socket
 #The APIrequests class is responsible for making the web requests to the provided API. As soon as an object of this
 #type is instantiated, the API URL's and credentials are loaded into the memory to be used by member funtions.
 #Here, self.config_obj contains the dictionary with URL's and the API key.
@@ -16,7 +17,14 @@ class APIrequests:
         self.config.close()
     #takes available ingredients as an input string and returns the recipe ID of the top rated recipe
     #which contains the ingredients
-    def foodSearch(self,ingredients,sortBy):
+    def checkConnectivity(self):
+        try:
+            socket.create_connection(("www.google.com", 80))
+            return True
+        except OSError:
+            pass
+        return False
+    def foodSearch(self,ingredients,sortBy='rating'):
         ingredients=ingredients.replace(',','%20')
         uriString=self.config_obj['searchUri']+'?'+'key='+self.config_obj['apiKey']+'&'+'q='+ingredients+'&'+'sort='+sortBy[0]
         recipes=requests.get(uriString)

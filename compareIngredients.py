@@ -20,4 +20,10 @@ class compareIngredients:
                 if self.availableIngredients[j] in requiredIngredients[i]:
                     requiredIngredients[i] = ''
                     break
+        i=0
+        while i<len(requiredIngredients):
+            if requiredIngredients[i]=='':
+                del requiredIngredients[i]
+            else:
+                i+=1
         return requiredIngredients
