@@ -14,6 +14,9 @@ This repo consists of the assignment which is a part of the interview process fo
 
 ## Manual: internal:
 
+### UML:
+
+![alt text](https://github.com/swiftomkar/iRobot_Assignment/blob/master/uml.PNG)
 ### APIrequests.py:
 1. This class is responsible to make all API requests to the food2fork API. 
 2. The instantiation of an object of APIrequests type automatically loads data from the specified json file in the keys directory.

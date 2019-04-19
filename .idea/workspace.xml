@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c112290-8579-4bb9-a8c6-7b2b7c7a2e0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,12 +33,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compareIngredients.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="compareIngredients.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compareIngredients.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="348">
+                <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -109,11 +123,11 @@
         <option value="$PROJECT_DIR$/test_APIrequests.py" />
         <option value="$PROJECT_DIR$/test_main.py" />
         <option value="$PROJECT_DIR$/test_compareIngredients.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/compareIngredients.py" />
         <option value="$PROJECT_DIR$/APIrequests.log" />
         <option value="$PROJECT_DIR$/APIrequests.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -401,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555436702472</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="adding uml image">
+      <created>1555665436624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1555665436624</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -453,7 +474,8 @@
     <MESSAGE value="updated readme.md to reflect changes in main.py" />
     <MESSAGE value="added internet connectivity check" />
     <MESSAGE value="minor refactoring- clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor refactoring- clean up" />
+    <MESSAGE value="adding uml image" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding uml image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -699,17 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="423">
-            <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compareIngredients.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -771,6 +782,17 @@
         <state relative-caret-position="475">
           <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="348">
+            <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
