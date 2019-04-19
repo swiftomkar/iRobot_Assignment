@@ -27,7 +27,7 @@ This repo consists of the assignment which is a part of the interview process fo
 ```python
 session=APIrequests() 
 if session.checkConnectivity():
-    topRatedRecipeId=session.foodSearch('potato%20cabbage%20rice')
+    topRatedRecipeId=session.foodSearch('potato,cabbage,rice')
 ```
    This will return the recipe ID for the top rated recipe with the given ingredients as input parameters
 7. Example: getRecipeDetails
